@@ -1,6 +1,7 @@
 package com.joes.gestion.entity;
 
-import javax.persistence.*;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
 @MappedSuperclass

@@ -29,6 +29,14 @@ public class Dossier {
     public Dossier() {
     }
 
+    public Employe getEmploye() {
+        return employe;
+    }
+
+    public void setEmploye(Employe employe) {
+        this.employe = employe;
+    }
+
     public int getCoded() {
         return this.coded;
     }

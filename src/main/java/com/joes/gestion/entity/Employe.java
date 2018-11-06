@@ -1,6 +1,9 @@
 package com.joes.gestion.entity;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import java.util.Date;
 import java.util.List;
 
@@ -34,6 +37,22 @@ public class Employe extends Utilisateur {
 
     public Employe() {
 
+    }
+
+    public TypePost getTypePost() {
+        return typePost;
+    }
+
+    public void setTypePost(TypePost typePost) {
+        this.typePost = typePost;
+    }
+
+    public List<Contrat> getContrat() {
+        return contrat;
+    }
+
+    public void setContrat(List<Contrat> contrat) {
+        this.contrat = contrat;
     }
 
     public Dossier getDossier() {

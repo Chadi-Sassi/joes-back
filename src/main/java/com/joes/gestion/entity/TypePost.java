@@ -19,6 +19,14 @@ public class TypePost {
     public TypePost() {
     }
 
+    public List<Employe> getEmploye() {
+        return employe;
+    }
+
+    public void setEmploye(List<Employe> employe) {
+        this.employe = employe;
+    }
+
     public int getId() {
         return id;
     }

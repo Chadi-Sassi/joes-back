@@ -1,7 +1,6 @@
 package com.joes.gestion.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
 import java.util.List;
 
 @Entity
@@ -19,6 +18,14 @@ public class TypeContrat {
     }
 
     public TypeContrat() {
+    }
+
+    public List<Contrat> getContrats() {
+        return contrats;
+    }
+
+    public void setContrats(List<Contrat> contrats) {
+        this.contrats = contrats;
     }
 
     public int getIdC() {
